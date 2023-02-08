@@ -12,3 +12,5 @@ We propose a new mechanism to augment a word vector embedding representation tha
 * python 
 * numpy 
 * pytorch
+
+## Repo still under construction
