@@ -21,3 +21,4 @@ Create and activate a Conda environment
 conda create -n ISR python=3.8 -y
 conda activate ISR
 ```
+Download the requirements
