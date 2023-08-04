@@ -19,5 +19,5 @@ Create and activate a Conda environment
 [Download and install Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 ```sh
 conda create -n ISR python=3.7
-conda activate null_space
+conda activate ISR
 ```
