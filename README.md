@@ -19,7 +19,7 @@ Given a biased embedding (static or contextual embedding), you can apply ISR to 
 
 ### Bespoke Word Lists (Appendix F)
 
-* Use the Bespoke Word Lists in the ```Bespoke_Word_Lists``` directory to Reproduce the ISR results in Table 3 of the Paper. To debias Gender (M/F)  and Math/Art subspace, you should run the following:
+* Use the Bespoke Word Lists in the ```Bespoke_Word_Lists``` directory to Reproduce the ISR results in Table 3 of the Paper. To debias Gendered Terms (M/F)  and Math/Art subspace, you should run the following:
 
 ```py
 
