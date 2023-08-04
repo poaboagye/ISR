@@ -35,3 +35,14 @@ python ISR_TwoConcepts.py --iterations 11 --embedType "glove" \
 
  * Use the Larger Word Lists from LIWC in the ```Larger_Word_Lists``` directory to Reproduce the ISR results in Table 5 of the Paper. To debias gendered Name (M/F) and Pleasant/Unpleasant subspace, you should run the following:
 
+   ```py
+
+python ISR_TwoConcepts.py --iterations 11 --embedType "glove" \
+--preTrainFile "glove.6B.300d" --top_vocab 200000 \
+--X_file "Larger_Word_Lists/name_male.json" --Y_file "Larger_Word_Lists/name_female.json" \
+--A_file "Larger_Word_Lists/pleasant.json" --B_file "Larger_Word_Lists/unpleasant.json" \
+--output_file  debiased_emb.vec
+
+```
+
+
