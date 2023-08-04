@@ -18,3 +18,9 @@ We propose a new mechanism to augment a word vector embedding representation tha
 Given a biased embedding (static or contextual embedding), you can apply ISR to debias a pair of concepts with the following command:
 
 * Use the Bespoke Word Lists in the ```Bespoke_Word_Lists``` directory to Reproduce the ISR results in Table 3 of the Paper. To debias Gender (M/F)  and Pleasant/Unpleasant subspaces, you should run the following:
+```
+python ISR_TwoConcepts.py --iterations 10 --embedType "glove" --preTrainFile "glove.6B.300d" --top_vocab 200000 \
+--X_file "Bespoke_Word_Lists/gen_male.json" --Y_file "Bespoke_Word_Lists/gen_female.json" \
+--A_file "Bespoke_Word_Lists/career.json" --B_file "Bespoke_Word_Lists/family.json" \
+--output_file  debiased_emb.vec
+```
