@@ -28,7 +28,7 @@ def read_terms_from_file(file_path):
 
 def ISR(iteration, gender_emb1, gender_emb2, occupation_emb1, occupation_emb2, base_emb, all_wordsVocab, gender_words, occupation_words, X, Y, A, B):
     print("##################################")
-    print("Iteration " + str(iteration+1))
+    print("Applying ISR Iteration " + str(iteration+1))
     
     v1, vec1_mean_v1, vec2_mean_v1 =  bias_two_means(gender_emb1, gender_emb2)
     v2, vec1_mean_v2, vec2_mean_v2 =  bias_two_means(occupation_emb1, occupation_emb2)
