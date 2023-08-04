@@ -27,3 +27,5 @@ python ISR_TwoConcepts.py --iterations 10 --embedType "glove" --preTrainFile "gl
 --output_file  debiased_emb.vec
 
 ```
+
+See the ```Bespoke_Word_Lists``` directory for all the Bespoke Word Lists (Appendix F) used in Table 3 of the Paper. 
