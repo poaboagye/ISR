@@ -13,3 +13,10 @@ We propose a new mechanism to augment a word vector embedding representation tha
 * NumPy 
 * GluonNLP
 
+## Setup
+
+Start a new virtual environment:
+```sh
+conda create -n null_space python=3.7 anaconda
+conda activate null_space
+```
