@@ -14,3 +14,5 @@ We propose a new mechanism to augment a word vector embedding representation tha
 * [GluonNLP](https://nlp.gluon.ai/install/install-more.html)
 
 ## How To Apply Iterative Subspace Rectification (ISR) on Two Concept Subspaces
+
+Given a biased embedding (static or contextual embeddings), you can apply ISR to debias a pair of concept with the following command:
