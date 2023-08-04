@@ -32,3 +32,5 @@ python ISR_TwoConcepts.py --iterations 10 --embedType "glove" --preTrainFile "gl
 
  ### Larger Word Lists from LIWC (Appendix F) 
 
+ * Use the Larger Word Lists from LIWC in the ```Larger_Word_Lists``` directory to Reproduce the ISR results in Table 5 of the Paper. To debias Gender (M/F)  and Pleasant/Unpleasant subspace, you should run the following:
+
