@@ -45,4 +45,6 @@ python ISR_TwoConcepts.py --iterations 11 --embedType "glove" \
 
 ```
 
+## How To Apply Iterative Subspace Rectification (ISR) on Three Concept Subspaces
+
 
