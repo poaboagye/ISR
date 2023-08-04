@@ -18,6 +18,6 @@ We propose a new mechanism to augment a word vector embedding representation tha
 Create and activate a Conda environment
 [Download and install Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 ```sh
-conda create -n ISR python=3.7
+conda create -n ISR python=3.8 -y
 conda activate ISR
 ```
