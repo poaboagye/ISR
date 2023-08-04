@@ -16,7 +16,8 @@ We propose a new mechanism to augment a word vector embedding representation tha
 ## Setup
 
 Start a new virtual environment:
+[Download and install Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 ```sh
-conda create -n null_space python=3.7 anaconda
+conda create -n ISR python=3.7
 conda activate null_space
 ```
