@@ -1,3 +1,9 @@
+"""
+Created on Fri Aug  4 08:40:46 2023
+
+@author: kwesi
+"""
+
 import json
 import numpy as np
 import gluonnlp as nlp
@@ -193,7 +199,7 @@ def calculate_WeatDotprod_scores(iterations=10, embedType="glove", preTrainFile=
     print(np.round(np.abs(dotProd), decimals=4))
     print()
 
-######## Save Debias Embedding
+######## Save Debiased Embedding
     saveEmbed(output_file, all_wordsVocab, vectors(base_emb) ) 
 
 if __name__ == "__main__":
