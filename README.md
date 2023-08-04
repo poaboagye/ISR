@@ -22,3 +22,7 @@ conda create -n ISR python=3.8 -y
 conda activate ISR
 ```
 Download the requirements
+```sh
+pip install -r requirements.txt
+```
+
