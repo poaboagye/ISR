@@ -11,17 +11,4 @@ We propose a new mechanism to augment a word vector embedding representation tha
 
 * Python 
 * NumPy 
-* GluonNLP
-
-## Setup
-
-Create and activate a Conda environment
-```sh
-conda create -n ISR python=3.8 -y
-conda activate ISR
-```
-Download the requirements
-```sh
-pip install -r requirements.txt
-```
-
+* [GluonNLP](https://nlp.gluon.ai/install/install-more.html)
