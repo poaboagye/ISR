@@ -30,3 +30,5 @@ python ISR_TwoConcepts.py --iterations 10 --embedType "glove" --preTrainFile "gl
 
 ```
 
+ ### Larger Word Lists from LIWC (Appendix F) 
+
