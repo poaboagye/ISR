@@ -12,3 +12,5 @@ We propose a new mechanism to augment a word vector embedding representation tha
 * Python 
 * NumPy 
 * [GluonNLP](https://nlp.gluon.ai/install/install-more.html)
+
+## How To Apply Iterative Subspace Rectification (ISR) on Two Concept Subspaces
