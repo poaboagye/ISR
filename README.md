@@ -13,4 +13,4 @@ We propose a new mechanism to augment a word vector embedding representation tha
 * NumPy 
 * gluonnlp
 
-## Repo still under construction
+## Setup
