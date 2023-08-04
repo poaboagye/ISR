@@ -17,4 +17,4 @@ We propose a new mechanism to augment a word vector embedding representation tha
 
 Given a biased embedding (static or contextual embedding), you can apply ISR to debias a pair of concepts with the following command:
 
-* Using the Bespoke Word Lists in the ```Bespoke_Word_Lists``` directory (Reproduce the ISR results in Table 3 of the paper)
+* Use the Bespoke Word Lists in the ```Bespoke_Word_Lists``` directory to Reproduce the ISR results in Table 3 of the Paper
