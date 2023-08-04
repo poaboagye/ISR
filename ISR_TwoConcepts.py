@@ -126,14 +126,6 @@ def ISR(iteration, gender_emb1, gender_emb2, occupation_emb1, occupation_emb2, b
     
     
     base_emb = rotated_head_allD.copy()
-
-    print("Dot Product Scores " + str(np.dot(v1, v2)))
-    v1, vec1_mean_v1, vec2_mean_v1 =  bias_two_means(gender_emb1, gender_emb2)
-    v2, vec1_mean_v2, vec2_mean_v2 =  bias_two_means(occupation_emb1, occupation_emb2)
-    
-    wt_score = compute_weat_score(base_emb, X, Y, A, B)
-    print("Weat Scores is " + str(np.round(np.abs(wt_score), decimals = 4)))
-    print()
     
     gender_emb = get_vecs(base_emb, gender_words)
     gender_emb1 = get_vecs(base_emb, X)
@@ -142,6 +134,14 @@ def ISR(iteration, gender_emb1, gender_emb2, occupation_emb1, occupation_emb2, b
     occupation_emb = get_vecs(base_emb, occupation_words)
     occupation_emb1 = get_vecs(base_emb, A)
     occupation_emb2 = get_vecs(base_emb, B)
+    
+    v1, vec1_mean_v1, vec2_mean_v1 =  bias_two_means(gender_emb1, gender_emb2)
+    v2, vec1_mean_v2, vec2_mean_v2 =  bias_two_means(occupation_emb1, occupation_emb2)
+    print("Dot Product Scores " + str(np.dot(v1, v2)))
+    
+    wt_score = compute_weat_score(base_emb, X, Y, A, B)
+    print("Weat Scores is " + str(np.round(np.abs(wt_score), decimals = 4)))
+    print()
     
     return wt_score, np.dot(v1, v2), base_emb, gender_emb1, gender_emb2, occupation_emb1, occupation_emb2
 
