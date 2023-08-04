@@ -193,7 +193,7 @@ def calculate_WeatDotprod_scores(iterations=10, embedType="glove", preTrainFile=
     print(np.round(np.abs(dotProd), decimals=4))
     print()
 
-######## Save Debiased Embedding
+######## Save Debias Embedding
     saveEmbed(output_file, all_wordsVocab, vectors(base_emb) ) 
 
 if __name__ == "__main__":
