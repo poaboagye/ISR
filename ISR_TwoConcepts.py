@@ -145,7 +145,7 @@ def ISR(iteration, gender_emb1, gender_emb2, occupation_emb1, occupation_emb2, b
     
     return wt_score, np.dot(v1, v2), base_emb, gender_emb1, gender_emb2, occupation_emb1, occupation_emb2
 
-def calculate_WeatDotprod_scores(iterations=10, embedType="glove", preTrainFile="glove.6B.300d", top_vocab=200000, X_file=None, Y_file=None, A_file=None, B_file=None, output_file=None):
+def calculate_WeatDotprod_scores(iterations=11, embedType="glove", preTrainFile="glove.6B.300d", top_vocab=200000, X_file=None, Y_file=None, A_file=None, B_file=None, output_file=None):
     vocab, all_wordsVocab = loadDataVocab(embedType, preTrainFile)
     all_wordsVocab = all_wordsVocab[:top_vocab]
 
@@ -206,7 +206,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--iterations', type=int, default=10)
+    parser.add_argument('--iterations', type=int, default=11)
     parser.add_argument('--embedType', type=str, default="glove")
     parser.add_argument('--preTrainFile', type=str, default="glove.6B.300d")
     parser.add_argument('--top_vocab', type=int, default=200000)
