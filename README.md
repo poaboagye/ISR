@@ -47,6 +47,8 @@ python ISR_TwoConcepts.py --iterations 11 --embedType "glove" \
 
 ## How To Apply Iterative Subspace Rectification (ISR) on Three Concept Subspaces
 
+* Use the Word Lists in the ```Bespoke_Word_Lists``` directory to Reproduce the ISR results in Table 3 of the Paper. To debias Gendered Terms (M/F)  and Science/Art subspace, you should run the following:
+
 ```py
 
 python ISR_ThreeConcepts.py --iterations 5 --embedType "glove"  \
@@ -56,4 +58,6 @@ python ISR_ThreeConcepts.py --iterations 5 --embedType "glove"  \
 
 
 ```
+
+
 
