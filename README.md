@@ -59,5 +59,24 @@ python ISR_ThreeConcepts.py --iterations 5 --embedType "glove"  \
 
 ```
 
+## Citation
+If you find anything helpful in this work, please cite our [paper]((https://openreview.net/pdf?id=TkQ1sxd9P4)):
+
+```
+@inproceedings{
+aboagye2023interpretable,
+title={Interpretable Debiasing of Vectorized Language Representations with Iterative Orthogonalization},
+author={Prince Osei Aboagye and Yan Zheng and Jack Shunn and Chin-Chia Michael Yeh and Junpeng Wang and Zhongfang Zhuang and Huiyuan Chen and Liang Wang and Wei Zhang and Jeff Phillips},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=TkQ1sxd9P4}
+}
+```
+
+## Contact
+
+For questions, please email prince@cs.utah.edu
+
+
 
 
