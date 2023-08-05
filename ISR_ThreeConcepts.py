@@ -350,13 +350,14 @@ if __name__ == "__main__":
     parser.add_argument('--embedType', type=str, default="glove")
     parser.add_argument('--preTrainFile', type=str, default="glove.6B.300d")
     parser.add_argument('--top_vocab', type=int, default=200000)
+
     parser.add_argument('--gendered_male_file', type=str,  required=True)
     parser.add_argument('--gendered_female_file', type=str, required=True)
     parser.add_argument('--name_male_file', type=str, required=True)
     parser.add_argument('--name_female_file', type=str,  required=True)
     parser.add_argument('--pleasant_file', type=str,  required=True)
     parser.add_argument('--unpleasant_file', type=str,  required=True)
-    parser.add_argument('--output_file', type=str, required=True)
+    
 
     args = parser.parse_args()
     
@@ -411,8 +412,7 @@ if __name__ == "__main__":
                       name_male, name_female, pleasant, unpleasant, itern)
     
     
-    ######## Save Debiased Embedding
-    saveEmbed(output_file, all_wordsVocab, vectors(base_emb) ) 
+    
     ###############################################################################
     
      
