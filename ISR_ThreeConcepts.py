@@ -55,13 +55,13 @@ def Weat_dotprodResult(emb, gendered_male, gendered_female, name_male, name_fema
 
     # Print the results
     print("########################################")
-    print("Dot Product During Training: Gender Term vs Gender Names ", np.round(np.dot(gendered_terms_direction, name_terms_direction), decimals=4))
-    print("Dot Product During Training: Gender Term vs Plea/Unpleas ", np.round(np.dot(gendered_terms_direction, pleasant_unpleasant_direction), decimals=4))
-    print("Dot Product During Training: Gender Names vs Plea/Unpleas ", np.round(np.dot(name_terms_direction, pleasant_unpleasant_direction), decimals=4))
+    print("Dot Product During Training: Gender Term vs Gender Names ", np.abs(np.round(np.dot(gendered_terms_direction, name_terms_direction), decimals=4)))
+    print("Dot Product During Training: Gender Term vs Plea/Unpleas ", np.abs(np.round(np.dot(gendered_terms_direction, pleasant_unpleasant_direction), decimals=4)))
+    print("Dot Product During Training: Gender Names vs Plea/Unpleas ", np.abs(np.round(np.dot(name_terms_direction, pleasant_unpleasant_direction), decimals=4)))
     print()
-    print("Weat Score: Gender Term vs Gender Names ", np.round(weat_score_gender_vs_names, decimals=4))
-    print("Weat Score: Gender Term vs Plea/Unpleas ", np.round(weat_score_gender_vs_pleasant_unpleasant, decimals=4))
-    print("Weat Score: Gender Names vs Plea/Unpleas ", np.round(weat_score_names_vs_pleasant_unpleasant, decimals=4))
+    print("Weat Score: Gender Term vs Gender Names ", np.abs(np.round(weat_score_gender_vs_names, decimals=4)))
+    print("Weat Score: Gender Term vs Plea/Unpleas ", np.abs(np.round(weat_score_gender_vs_pleasant_unpleasant, decimals=4)))
+    print("Weat Score: Gender Names vs Plea/Unpleas ", np.abs(np.round(weat_score_names_vs_pleasant_unpleasant, decimals=4)))
     print()
 
 
