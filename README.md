@@ -47,4 +47,13 @@ python ISR_TwoConcepts.py --iterations 11 --embedType "glove" \
 
 ## How To Apply Iterative Subspace Rectification (ISR) on Three Concept Subspaces
 
+```py
+
+python ISR_ThreeConcepts.py --iterations 5 --embedType "glove"  \
+--gendered_male_file "Three_Concept_WordLists/gen_male.json"  --gendered_female_file "Three_Concept_WordLists/gen_female.json"  \
+--name_male_file "Three_Concept_WordLists/name_American.json" --name_female_file "Three_Concept_WordLists/name_Mexican.json" \
+--pleasant_file "Three_Concept_WordLists/pleasant.json" --unpleasant_file "Three_Concept_WordLists/unpleasant.json"
+
+
+```
 
