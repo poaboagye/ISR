@@ -185,3 +185,13 @@ def load_wordList(filename):
     return data_into_list
 
 ########
+def closest_vec_span(v, spanMatrix):
+    v/=np.linalg.norm(v)
+    spanMatrix[0] = spanMatrix[0]/np.linalg.norm(spanMatrix[0])
+    spanMatrix[1] = spanMatrix[1]/np.linalg.norm(spanMatrix[1])
+    num_proj_onto = 2
+    closest_vec = 0.0
+    for j in range(num_proj_onto):
+        closest_vec = closest_vec + proj(spanMatrix[j], v)
+    return closest_vec/ np.linalg.norm(closest_vec)
+
