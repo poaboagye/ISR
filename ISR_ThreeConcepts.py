@@ -1,12 +1,7 @@
-############################################################
-#oRIGINAL cODE
-############################################################
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Thu Apr  7 14:29:32 2022
+Created on Fri Aug  4 20:04:28 2023
 
-@author: prince
+@author: kwesi
 """
 
 import json
